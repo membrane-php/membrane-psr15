@@ -6,6 +6,7 @@ namespace Membrane\Psr15;
 
 class Container implements ContainerInterface
 {
+    /** @var mixed[] */
     private array $services = [];
 
     public function add(string $id, mixed $service): void

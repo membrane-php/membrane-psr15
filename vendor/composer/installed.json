@@ -294,17 +294,17 @@
         },
         {
             "name": "membrane/membrane",
-            "version": "0.1.1",
-            "version_normalized": "0.1.1.0",
+            "version": "dev-improved-error-messages",
+            "version_normalized": "dev-improved-error-messages",
             "source": {
                 "type": "git",
-                "url": "https://github.com/membrane-php/membrane-core.git",
-                "reference": "6c1b23da4a7d042b20cfa2c5c5a31856e78c5dc6"
+                "url": "https://github.com/charjr/membrane-core.git",
+                "reference": "9baaec8e25dfbd6680fad048e3ebaedbccd540ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/membrane-php/membrane-core/zipball/6c1b23da4a7d042b20cfa2c5c5a31856e78c5dc6",
-                "reference": "6c1b23da4a7d042b20cfa2c5c5a31856e78c5dc6",
+                "url": "https://api.github.com/repos/charjr/membrane-core/zipball/9baaec8e25dfbd6680fad048e3ebaedbccd540ad",
+                "reference": "9baaec8e25dfbd6680fad048e3ebaedbccd540ad",
                 "shasum": ""
             },
             "require": {
@@ -318,7 +318,7 @@
                 "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "^3.7"
             },
-            "time": "2022-12-16T10:27:45+00:00",
+            "time": "2022-12-23T15:28:28+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -327,10 +327,8 @@
                     "Membrane\\Fixtures\\": "tests/fixtures/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "support": {
-                "issues": "https://github.com/membrane-php/membrane-core/issues",
-                "source": "https://github.com/membrane-php/membrane-core/tree/0.1.1"
+                "source": "https://github.com/charjr/membrane-core/tree/improved-error-messages"
             },
             "install-path": "../membrane/membrane"
         },
@@ -711,17 +709,17 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.9.3",
-            "version_normalized": "1.9.3.0",
+            "version": "1.9.4",
+            "version_normalized": "1.9.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "709999b91448d4f2bb07daffffedc889b33e461c"
+                "reference": "d03bccee595e2146b7c9d174486b84f4dc61b0f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/709999b91448d4f2bb07daffffedc889b33e461c",
-                "reference": "709999b91448d4f2bb07daffffedc889b33e461c",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d03bccee595e2146b7c9d174486b84f4dc61b0f2",
+                "reference": "d03bccee595e2146b7c9d174486b84f4dc61b0f2",
                 "shasum": ""
             },
             "require": {
@@ -730,7 +728,7 @@
             "conflict": {
                 "phpstan/phpstan-shim": "*"
             },
-            "time": "2022-12-13T10:28:10+00:00",
+            "time": "2022-12-17T13:33:52+00:00",
             "bin": [
                 "phpstan",
                 "phpstan.phar"
@@ -753,7 +751,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.9.3"
+                "source": "https://github.com/phpstan/phpstan/tree/1.9.4"
             },
             "funding": [
                 {
@@ -773,17 +771,17 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.2.21",
-            "version_normalized": "9.2.21.0",
+            "version": "9.2.22",
+            "version_normalized": "9.2.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "3f893e19712bb0c8bc86665d1562e9fd509c4ef0"
+                "reference": "e4bf60d2220b4baaa0572986b5d69870226b06df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/3f893e19712bb0c8bc86665d1562e9fd509c4ef0",
-                "reference": "3f893e19712bb0c8bc86665d1562e9fd509c4ef0",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/e4bf60d2220b4baaa0572986b5d69870226b06df",
+                "reference": "e4bf60d2220b4baaa0572986b5d69870226b06df",
                 "shasum": ""
             },
             "require": {
@@ -808,7 +806,7 @@
                 "ext-pcov": "*",
                 "ext-xdebug": "*"
             },
-            "time": "2022-12-14T13:26:54+00:00",
+            "time": "2022-12-18T16:40:55+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -841,7 +839,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.21"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.22"
             },
             "funding": [
                 {
@@ -2657,17 +2655,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v6.2.0",
-            "version_normalized": "6.2.0.0",
+            "version": "v6.2.2",
+            "version_normalized": "6.2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "f2570f21bd4adc3589aa3133323273995109bae0"
+                "reference": "6ed8243aa5f2cb5a57009f826b5e7fb3c4200cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/f2570f21bd4adc3589aa3133323273995109bae0",
-                "reference": "f2570f21bd4adc3589aa3133323273995109bae0",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/6ed8243aa5f2cb5a57009f826b5e7fb3c4200cf3",
+                "reference": "6ed8243aa5f2cb5a57009f826b5e7fb3c4200cf3",
                 "shasum": ""
             },
             "require": {
@@ -2683,7 +2681,7 @@
             "suggest": {
                 "symfony/console": "For validating YAML files using the lint command"
             },
-            "time": "2022-11-25T19:00:27+00:00",
+            "time": "2022-12-14T16:11:27+00:00",
             "bin": [
                 "Resources/bin/yaml-lint"
             ],
@@ -2714,7 +2712,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v6.2.0"
+                "source": "https://github.com/symfony/yaml/tree/v6.2.2"
             },
             "funding": [
                 {
