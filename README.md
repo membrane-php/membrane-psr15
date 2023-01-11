@@ -18,23 +18,66 @@ Require the `membrane/psr15` package in your composer.json and update your depen
 composer require membrane/laravel
 ```
 
-### Usage
+## Usage
 
-#### Request Validation
+### Requests
 
-The `RequestValidation` middleware will validate or invalidate incoming requests and let you decide how to react.
+The `\Membrane\Psr15\Middleware\RequestValidation` middleware will validate or invalidate incoming requests and let you decide how to react.
 You can precede it with your own custom middleware or precede it with one of the following built-in options:
 
-#### Nested Json Response
+### Responses
 
-The `ResponseJsonNested` MUST precede the `RequestValidation` middleware
-as it relies on the container containing the result.
-It will check whether the request has passed or failed validation.
-Invalid requests will return a response detailing the reasons the request was invalid.
+Any response middleware MUST follow the `RequestValidation` middleware as it requires the `result` object being added to
+your container.  
+These middlewares will check whether the request has passed or failed validation.  
+Invalid requests will return an appropriate response detailing the reasons the request was invalid.
 
-#### Flat Json Response
+#### Flat Json
 
-The `ResponseJsonFlat` MUST precede the `RequestValidation` middleware
-as it relies on the container containing the result.
-It will check whether the request has passed or failed validation.
-Invalid requests will return a response detailing the reasons the request was invalid.
+`\Membrane\Psr15\Middleware\ResponseJsonFlat`
+
+**Example Output**
+
+```text
+{
+    "errors":{
+        "pet->id":["must be an integer"],
+        "pet":["name is a required field"]
+    },
+    "title":"Request payload failed validation",
+    "type":"about:blank",
+    "status":400
+}
+```
+
+#### Nested Json
+
+`\Membrane\Psr15\Middleware\ResponseJsonNested`
+
+**Example Output**
+
+```text
+{
+    "errors":{
+        "errors":[],
+        "fields":{
+            "pet":{
+                "errors":[
+                    "name is a required field"
+                ],
+                "fields":{
+                    "id":{
+                        "errors":[
+                            "must be an integer"
+                        ],
+                        "fields":[]
+                    }
+                }
+            }
+        }
+    },
+    "title":"Request payload failed validation",
+    "type":"about:blank",
+    "status":400
+}
+```
