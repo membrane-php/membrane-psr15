@@ -1,6 +1,7 @@
 {
   "name": "membrane/psr15",
   "type": "library",
+  "license": "MPL-2.0",
   "autoload": {
     "psr-4": {
       "Membrane\\Psr15\\": "src/",
